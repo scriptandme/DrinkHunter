@@ -11,7 +11,7 @@ block topnav
 				ul.nav.navbar-nav.navbar-right
 					li
 						a(href='javascript:;', class='user-profile dropdown-toggle' data-toggle='dropdown' aria-expanded='false')
-							img(src='/images/img.jpg')
+							img(src='https://scontent.fscl2-1.fna.fbcdn.net/t31.0-8/11260888_10207153183405275_7221942946935303213_o.jpg')
 							span cynthia
 							span.fa.fa-angle-down
 						ul.dropdown-menu.dropdown-usermenu.pull-right
@@ -31,15 +31,15 @@ block contenido
 					div.x_panel
 						div.x_content
 							div.row
-								each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+								each cat in categorias
 									div.col-md-55
 										div.thumbnail
 											div.image.view.view-first
-												img(style='width: 100%; display: block;' src='/images/4.jpg' alt='image')
+												img(style='width: 100%; display: block;' src='/images/iconos/'+cat.imagen alt='image')
 												div.mask
-													p='Categoria ' + val
+													p=cat.nombre
 													div.tools.tools-bottom
-														a(href="#")
+														a(href="/drink-hunter/categoria/"+cat.id+"/"+cat.nombre)
 															i.fa.fa-link
 											div.caption
-												p Cervezas Nacionales / Importadas
+												p=cat.nombre

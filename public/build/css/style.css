@@ -1,18 +1,12 @@
 #map{
 	width: 100%;
-	height: 100%;
+	height: 500px;
 }
 .minifoto{
 	display: block;
     margin-bottom: 20px;
     line-height: 1.42857143;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    -webkit-transition: border .2s ease-in-out;
-    -o-transition: border .2s ease-in-out;
-    transition: border .2s ease-in-out;
-    height: 190px;
+    height: 350px;
     overflow: hidden;
 }
 
@@ -37,5 +31,22 @@
 }
 .logopulento img{
 	width: 100%;
+}
+.x_panel.perfil {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0px;
+  display: inline-block;
+  background: #fff;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  opacity: 1;
+  transition: all .2s ease;
+}
+.jumbotron{
+    padding-top: 20px;
+    margin-bottom: 0px;
 }
 

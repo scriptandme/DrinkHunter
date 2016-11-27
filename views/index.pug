@@ -11,7 +11,7 @@ block topnav
 				ul.nav.navbar-nav.navbar-right
 					li
 						a(href='javascript:;', class='user-profile dropdown-toggle' data-toggle='dropdown' aria-expanded='false')
-							img(src='/images/img.jpg')
+							img(src='https://scontent.fscl2-1.fna.fbcdn.net/t31.0-8/11260888_10207153183405275_7221942946935303213_o.jpg')
 							span cynthia
 							span.fa.fa-angle-down
 						ul.dropdown-menu.dropdown-usermenu.pull-right
@@ -24,33 +24,33 @@ block contenido
 		div
 			div.page-title
 				div.title_left
-					h3 Ofertas
+					h3=tituloh3
 			div.clearfix
 			div.row
 				div.col-md-12
 					div.x_panel
 						div.x_content
 							div.row
-								each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+								each pro in productos
 									div.col-md-4.col-sm-4.col-xs-12.profile_details
 										div.well.profile_view
 											div.col-sm-12
 												div.left.col-xs-7
-													h2='Cerveza ' + val
+													h2=pro.nombre
 													p
-														strong Volumen: 350 cc
+														strong=pro.volumen
 													p
-														strong $ 3.500
+														strong= '$ ' + pro.ultimoPrecio
 													ul.list-unstyled
 														li
 															i.fa.fa-calendar
-															span 26-11-2016
+															span=pro.actualizado
 														li
 															i.fa.fa-link
-															span
-																a(href='link.html') Link
+															spa
+																a(href=pro.link, target="_blank") Link
 												div.right.col-xs-5.text-center
-													img(src='/images/img.jpg' class='img-circle img-responsive')
+													img(src=pro.imagen, class='img-circle img-responsive')
 											div.col-xs-12.bottom.text-center
 												div.col-xs-12.col-sm-6.emphasis
 													p.ratings
