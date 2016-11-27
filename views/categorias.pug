@@ -1,0 +1,45 @@
+extends ceeseese.pug
+block titulo
+	title Categorias
+block topnav
+	div.top_nav
+		div.nav_menu
+			nav(role='navigation')
+				div.nav.toggle
+					a(id='menu_toggle')
+						i.fa.fa-bars
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href='javascript:;', class='user-profile dropdown-toggle' data-toggle='dropdown' aria-expanded='false')
+							img(src='/images/img.jpg')
+							span cynthia
+							span.fa.fa-angle-down
+						ul.dropdown-menu.dropdown-usermenu.pull-right
+							li
+								a(href='/logout')
+									i.fa.fa-sign-out.pull-right Log Out
+		   
+block contenido
+	div(class='right_col' role='main')
+		div
+			div.page-title
+				div.title_left
+					h3 Categorias
+			div.clearfix
+			div.row
+				div.col-md-12
+					div.x_panel
+						div.x_content
+							div.row
+								each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+									div.col-md-55
+										div.thumbnail
+											div.image.view.view-first
+												img(style='width: 100%; display: block;' src='/images/4.jpg' alt='image')
+												div.mask
+													p='Categoria ' + val
+													div.tools.tools-bottom
+														a(href="#")
+															i.fa.fa-link
+											div.caption
+												p Cervezas Nacionales / Importadas

@@ -1,0 +1,84 @@
+doctype html
+html(lang="es")
+	head
+		block titulo
+		meta(http-equiv='Content-Type' content='text/html, charset=UTF-8')
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='/vendors/bootstrap/dist/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/vendors/font-awesome/css/font-awesome.min.css')
+		link(rel='stylesheet', href='/vendors/iCheck/skins/flat/green.css')
+		link(rel='stylesheet', href='/vendors/google-code-prettify/bin/prettify.min.css')
+		link(rel='stylesheet', href='/vendors/select2/dist/css/select2.min.css')
+		link(rel='stylesheet', href='/vendors/switchery/dist/switchery.min.css')
+		link(rel='stylesheet', href='/vendors/starrr/dist/starrr.css')
+		link(rel='stylesheet', href='/build/css/custom.css')
+		link(rel='stylesheet', href='/build/css/style.css')
+	body.nav-md
+		div.container.body
+			div.main_container
+				div.col-md-3.left_col
+					div.left_col.scroll-view
+						div.navbar.nav_title 
+							a(href='index' class='site_title logopulento')
+								img(src='/images/drink-hunter.jpeg')
+						div.clearfix
+						div.profile
+							div.profile_pic
+								img(src='/images/img.jpg', class='img-circle profile_img')
+							div.profile_info
+								span Prost
+								h2 Cynthia
+
+						br
+						div#sidebar-menu.main_menu_side.hidden-print.main_menu
+							div.menu_section
+								h3 General
+								ul.nav.side-menu
+									li
+										a(href='/drink-hunter')
+											i.fa.fa-home
+											span Home
+									li
+										a(href='/drink-hunter/categorias')
+											i.fa.fa-tags 
+											span Categorias
+									li
+										a(href='/drink-hunter/mapa-locales')
+											i.fa.fa-map-marker 
+											span Botillerias
+									li
+										a(href='/drink-hunter/preferencias')
+											i.fa.fa-cog 
+											span Preferencias
+									li
+										a(href='/drink-hunter/sobre-drink-hunter')
+											i.fa.fa-group 
+											span Conocenos
+				block topnav
+				block contenido
+				footer
+					div.pull-right
+						span Drink Hunter 
+					div.clearfix
+				script(src='/vendors/jquery/dist/jquery.min.js')
+				script(src='/vendors/bootstrap/dist/js/bootstrap.min.js')
+				script(src='/vendors/fastclick/lib/fastclick.js')
+				script(src='/vendors/nprogress/nprogress.js')
+				script(src='/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js')
+				script(src='/vendors/iCheck/icheck.min.js')
+				script(src='/js/moment/moment.min.js')
+				script(src='/js/datepicker/daterangepicker.js')
+				script(src='/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js')
+				script(src='/vendors/jquery.hotkeys/jquery.hotkeys.js')
+				script(src='/vendors/google-code-prettify/src/prettify.js')
+				script(src='/vendors/jquery.tagsinput/src/jquery.tagsinput.js')
+				script(src='/vendors/switchery/dist/switchery.min.js')
+				script(src='/vendors/select2/dist/js/select2.full.min.js')
+				script(src='/vendors/parsleyjs/dist/parsley.min.js')
+				script(src='/vendors/autosize/dist/autosize.min.js')
+				script(src='/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js')
+				script(src='/vendors/starrr/dist/starrr.js')
+				script(src='/build/js/custom.min.js')
+				script(src='http://www.google.com/jsapi')

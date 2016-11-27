@@ -1,0 +1,46 @@
+extends ceeseese.pug
+block titulo
+	title Login
+block topnav
+	div.top_nav
+		div.nav_menu
+			nav(role='navigation')
+				div.nav.toggle
+					a(id='menu_toggle')
+						i.fa.fa-bars
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href='javascript:;', class='user-profile dropdown-toggle' data-toggle='dropdown' aria-expanded='false')
+							img(src='/images/img.jpg')
+							span cynthia
+							span.fa.fa-angle-down
+						ul.dropdown-menu.dropdown-usermenu.pull-right
+							li
+								a(href='/logout')
+									i.fa.fa-sign-out.pull-right Log Out
+		   
+block contenido
+	div(class='right_col' role='main')
+		div
+			div.page-title
+				div.title_left
+					h3 Sobre Nosotros
+			div.clearfix
+			div.row
+				div.col-md-12
+					div.x_panel
+						div.x_content
+							div.row
+								each val in [1, 2, 3]
+									div.col-md-6.col-sm-6.col-xs-12
+										div.x_panel
+											div.x_title
+												h2 Cynthia Cachula ConSeed
+												div.clearfix
+					
+											div.x_content
+												div(class='bs-example' data-example-id='simple-jumbotron')
+													div.jumbotron
+														div.minifoto.col-md-12
+															img(src='https://scontent.fscl2-1.fna.fbcdn.net/t31.0-8/15129571_10210744277020371_4623197942689160382_o.jpg' style='width: 100%; display: block;')
+														p This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.

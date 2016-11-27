@@ -1,0 +1,57 @@
+extends ceeseese.pug
+block titulo
+	title Login
+block topnav
+	div.top_nav
+		div.nav_menu
+			nav(role='navigation')
+				div.nav.toggle
+					a(id='menu_toggle')
+						i.fa.fa-bars
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href='javascript:;', class='user-profile dropdown-toggle' data-toggle='dropdown' aria-expanded='false')
+							img(src='/images/img.jpg')
+							span cynthia
+							span.fa.fa-angle-down
+						ul.dropdown-menu.dropdown-usermenu.pull-right
+							li
+								a(href='/logout')
+									i.fa.fa-sign-out.pull-right Log Out
+		   
+block contenido
+	div(class='right_col' role='main')
+		div
+			div.page-title
+				div.title_left
+					h3 Inicia Sesion para ver tus favoritos
+			div.clearfix
+			div.row
+				div.col-md-12
+					div.x_panel
+						div.x_content
+							div.row
+								div.col-md-12.col-sm-12.col-xs-12
+									div.x_panel
+										div.x_content
+											br
+											form(id='demo-form2' data-parsley-validate class='form-horizontal form-label-left')
+												div.form-group
+													label(class='control-label col-md-3 col-sm-3 col-xs-12' for='first-name') First Name 
+														span.required *
+													div.col-md-6.col-sm-6.col-xs-12
+														input(type='text' id='first-name' required='required' class='form-control col-md-7 col-xs-12')
+												div.form-group
+													label(class='control-label col-md-3 col-sm-3 col-xs-12' for='last-name') Last Name 
+														span.required *
+													div.col-md-6.col-sm-6.col-xs-12
+														input(type='text' id='last-name' name='last-name' required='required' class='form-control col-md-7 col-xs-12')
+												div.form-group
+													label(for='middle-name' class='control-label col-md-3 col-sm-3 col-xs-12') Middle Name / Initial
+													div.col-md-6.col-sm-6.col-xs-12
+														input(id='middle-name' class='form-control col-md-7 col-xs-12' type='text' name='middle-name')
+												div.ln_solid
+													div.form-group
+														div.col-md-6.col-sm-6.col-xs-12.col-md-offset-3
+															button(type='submit' class='btn btn-primary') Cancel
+															button(type='submit' class='btn btn-success') Submit
