@@ -23,3 +23,9 @@ Técnologias usadas
 Es un proyecto creados por alcoholicos, para alcohlicos... nah.
 DrinkHunter es una aplicación que te ayudará a encontrar las mejores ofertas en copetes. Nos dedicamos a recolectar los diferentes productos y precios existentes en el mercado, y así, entregarte las mejores ofertas para tu brebaje favorito.
 También queremos ayudarte a encontrar un amigo en tu camino, y no precisamente a los verdes, si no aquel sujeto que se encarga de distribuir tan preciado tesoro. Por esto generamos un mapa con las botillerias cercanas.
+
+
+Link Demo
+----------
+
+https://youtu.be/zeNlAkbm5d0
