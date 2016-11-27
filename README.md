@@ -29,3 +29,10 @@ Link Demo
 ----------
 
 https://youtu.be/zeNlAkbm5d0
+
+
+Link Diapo
+----------
+
+https://docs.google.com/presentation/d/10ZNaYfKffXX5XNv518fUTyV7ij7xfHQVU5RREPrmzug/edit?usp=sharing
+
